@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+      <!--xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{fragments/main_layout}"-->
+
+<head th:replace="fragments/header::header">
+
+</head>
+<body>
+<div th th:replace="fragments/header::navbar">
+</div>
+    <div class="container">
+        <div>
+            There was an error
+            <span th:text="${message}"></span>
+            <span th:text="${status}" class="text text-danger"></span>
+        </div>
+        <div>
+            Meh
+        </div>
+
+    </div>
+</body>
+</html>
